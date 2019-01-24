@@ -1,8 +1,13 @@
 import Vue from 'vue';
 import App from './App.vue';
-import Home from './Home.vue';
 
-Vue.component('home', Home);
+export const eventBus = new Vue({
+  methods: {
+    changeAge(age) {
+      this.$emit('changedAge', age);
+    }
+  }
+});
 
 new Vue({
   el: '#app',
