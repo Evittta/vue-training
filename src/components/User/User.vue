@@ -31,7 +31,7 @@ import UserEdit from './UserEdit'
     },
     methods: {
       changeName() {
-        this.name = 'Max';
+        this.name = 'Vita';
       },
       resetName() {
         this.name ='Evita';
