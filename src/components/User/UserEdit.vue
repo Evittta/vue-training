@@ -13,9 +13,9 @@
     props: ['userAge'],
     methods: {
       editAge() {
-        this.userAge = 21;
+        // this.userAge = 21;
         // this.$emit('changedAge', this.userAge);
-        // eventBus.$emit('changedAge', this.userAge);
+        // eventBus.$emit('changedAge', 21);
         eventBus.changeAge(this.userAge);
       }
     }
